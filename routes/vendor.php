@@ -56,6 +56,8 @@ Route::get('/index2', function(){return view('front.index2');})->name('index2');
 
 //login agency routes
 Route::get('agency/login', [AgencyAuthController::class,'login'])->name('agency-login');
+Route::get('agency', [AgencyAuthController::class,'login']);
+
 Route::post('agency/login-action', [AgencyAuthController::class,'loginAction'])->name('agency-login-action');
 Route::get('agency/register', [AgencyAuthController::class,'register'])->name('agency-register');
 Route::post('agency/register-action', [AgencyAuthController::class,'registerAction'])->name('agency-register-action');

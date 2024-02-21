@@ -9,6 +9,7 @@ return [
     'properties' => 'Properties',
     'properties_view' => 'All Properties',
     'properties_features' => 'Features Properties',
+    'property_type' => 'Property Type',
     'agencies_view' => 'All Agencies',
     'agencies_features' => 'Features Agencies',
     'agencies_agent' => 'Agencies Agents',

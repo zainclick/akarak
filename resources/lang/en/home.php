@@ -50,15 +50,20 @@ return [
     // end What People Says?
 
     // start trinding articals
-    'trending_articles_title' => 'المقالات الشائعة',
+    'trending_articles_title' => 'Best Articles',
     'trending_articles_second' => 'تصفح أقوي المقالات الخاصة بالعقارات من  خلال هذه القائمة',
     'continue' => 'متابعة',
     // end trending articals
 
+    // start features agencies 
+
+    'features_agencies' => 'Features Agencies',
+    'explore_features_agencies' => 'Explore Features Agencies',
+    'view_all' => 'View All',
     // start call To action
     'come_agent_title' => 'تريد أن تصبح وكيل عقارات؟ ',
     'come_agent_second' => 'سنساعدك على تنمية حياتك المهنية ونموك.',
-    'signup_now' => 'سجل الأن',
+    'signup_now' => 'Sign Up',
     // end call To action
 
 

@@ -10,7 +10,7 @@
 					
 					<h1 class="big-header-capt mb-0"><span>{{__('home.land_first_title')}}</span>{{__('home.land_second_title')}}</h1>
 					<p class="text-center mb-5">{{__('home.land_third_title')}}</p>
-					<<form action="{{route('front-properties-search-index')}}" method="GET" style="margin-top: -50px;">
+					<form action="{{route('front-properties-search-index')}}" method="GET" style="margin-top: -50px;">
 					<!-- Type -->
 					<div class="property-search-type">
 						<label class="active"><input class="first-tab" name="property_status" checked="checked" type="radio" value="all">{{__('home.anystatus')}}</label>
@@ -160,32 +160,209 @@
 			</div>
 			<!-- ============================ Hero Banner End ================================== -->
 
-            <!-- ============================ Latest Property For features Start ================================== -->
-			<section class="gray">
+			<!-- ============================ section first ==================================== -->
+			<section>
+			<div class="container">
+				<div class="sec-heading center mb-3">
+					<h3>Supercharge your search</h3>
+					<p>Explore the most home listings in the UAE. With the most reliable information. All at your fingertips.</p>
+				</div>
+			<div class="row">
+						
+				<div class="col-lg-6 col-md-12">
+
+					<!-- Single Agency -->
+					<div class="agency agency-list" style="height: 180px;border-radius: 12px;">
+							
+								<a href="#" class="agency-avatar" style="height: 100%;padding: 10px;background-color: #eff9ff;flex: 2">
+									<img src="/front/assets/img/Verified_Listings.svg" alt="">
+								</a>
+								
+								<div class="agency-content">
+									<div class="agency-name">
+										<div><a href="#">Listings you can trust</a></div>
+										<div style="font-size: 14px;margin-top: 10px;">Browse the most accurate listings, validated by our team.</div>
+										<div style="text-decoration: underline;margin-top: 30px;color: #db1b1b;"><a href="#" style="color: #f05e45;">Explore Verified Listings</a></div>
+									</div>
+									
+									<div class="clearfix"></div>
+								</div>
+							</div>
+				</div>
+
+				<div class="col-lg-6 col-md-12">
+
+					<!-- Single Agency -->
+					<div class="agency agency-list" style="height: 180px;border-radius: 12px;">
+							
+								<a href="#" class="agency-avatar" style="height: 100%;padding: 10px;background-color: #e3e1f2;flex: 2">
+									<img src="/front/assets/img/superagent_illustration.svg" alt="">
+								</a>
+								
+								<div class="agency-content">
+									<div class="agency-name">
+										<div><a href="#">Listings you can trust</a></div>
+										<div style="font-size: 14px;margin-top: 10px;">Browse the most accurate listings, validated by our team.</div>
+										<div style="text-decoration: underline;margin-top: 30px;color: #db1b1b;"><a href="#" style="color: #f05e45;">Explore Verified Listings</a></div>
+									</div>
+									
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					</div>
+
+					<div class="col-lg-6 col-md-12">
+
+					<!-- Single Agency -->
+					<div class="agency agency-list" style="height: 180px;border-radius: 12px;">
+							
+								<a href="#" class="agency-avatar" style="height: 100%;padding: 10px;flex: 2;">
+									<img src="/front/assets/img/Price_map.svg" alt="">
+								</a>
+								
+								<div class="agency-content">
+									<div class="agency-name">
+										<div><a href="#">Listings you can trust</a></div>
+										<div style="font-size: 14px;margin-top: 10px;">Browse the most accurate listings, validated by our team.</div>
+										<div style="text-decoration: underline;margin-top: 30px;color: #db1b1b;"><a href="#" style="color: #f05e45;">Explore Verified Listings</a></div>
+									</div>
+									
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					</div>
+
+
+
+							
+
+				<div class="col-lg-6 col-md-12">
+
+					<!-- Single Agency -->
+					<div class="agency agency-list" style="height: 180px;border-radius: 12px;">
+							
+								<a href="#" class="agency-avatar" style="height: 100%;padding: 10px;flex: 2">
+									<img src="/front/assets/img/Home_calculator.svg" alt="">
+								</a>
+								
+								<div class="agency-content">
+									<div class="agency-name">
+										<div><a href="#">Listings you can trust</a></div>
+										<div style="font-size: 14px;margin-top: 10px;">Browse the most accurate listings, validated by our team.</div>
+										<div style="text-decoration: underline;margin-top: 30px;color: #db1b1b;"><a href="#" style="color: #f05e45;">Explore Verified Listings</a></div>
+									</div>
+									
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					</div>
+
+				
+
+				
+			</div>
+													
+			</div>	
+				
+			</section>
+			<!-- ============================ End section first ================================ -->
+
+			<!-- ============================ start sections ==================================== -->
+
+<section class="home-category-section">
+			<div class="container">
+				<div class="sec-left text-center">
+					<h3>Properties Type</h3>
+					<p>Find Your properties Type.</p>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+					
+						<div class="card border-0 category-box">
+							<div class="card-body text-center">
+								<img src="/front/assets/img/category-1.png" alt="category-image" class="img-fluid mb-3">
+								<h3 class="font-15"><a href="" class="text-decoration-none stretched-link">Apartments</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+						<div class="card border-0 category-box">
+							<div class="card-body text-center">
+								<img src="/front/assets/img/category-2.png" alt="category-image" class="img-fluid mb-3">
+								<h3 class="font-15"><a href="" class="text-decoration-none stretched-link">Houses</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+						<div class="card border-0 category-box">
+							<div class="card-body text-center">
+								<img src="/front/assets/img/category-3.png" alt="category-image" class="img-fluid mb-3">
+								<h3 class="font-15"><a href="" class="text-decoration-none stretched-link">Rental House</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+						<div class="card border-0 category-box">
+							<div class="card-body text-center">
+								<img src="/front/assets/img/category-4.png" alt="category-image" class="img-fluid mb-3">
+								<h3 class="font-15"><a href="" class="text-decoration-none stretched-link">Commercial</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+						<div class="card border-0 category-box">
+							<div class="card-body text-center">
+								<img src="/front/assets/img/category-5.png" alt="category-image" class="img-fluid mb-3">
+								<h3 class="font-15"><a href="" class="text-decoration-none stretched-link">Office</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+						<div class="card border-0 category-box">
+							<div class="card-body text-center">
+								<img src="/front/assets/img/category-6.png" alt="category-image" class="img-fluid mb-3">
+								<h3 class="font-15"><a href="" class="text-decoration-none stretched-link">Family House</a></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+			<!-- ============================ End sections ======================================= -->
+			
+
+
+
+
+
+			<!-- ============================ Slide Property features Start ================================== -->
+			<section>
 				<div class="container">
 				
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
-							<div class="sec-heading center mb-3">
-								<h2>{{__('home.featured_properties_title')}}</h2>
-								<p>{{__('home.featured_properties_second')}}</p>
+							<div class="sec-heading2 center  mb-3">
+								<div class="sec-left text-center">
+									<h3>{{__('home.featured_properties_title')}}</h3>
+									<p>{{__('home.featured_properties_second')}}</p>
+								</div>
+								<div class="sec-right">
+									<a href="#">View All<i class="ti-angle-double-right ml-2"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 					
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
-							<?php 
-								
-							if($prop_feaures->count() > 0){?>
 							<div class="property-slide">
-								
-							
-								@foreach ($prop_feaures as $prop)
+								<?php if($prop_feaures->count() > 0){?>
+									@foreach ($prop_feaures as $prop)
 								<!-- Single Property -->
 								<div class="single-items">
 									<div class="property_item classical-list">
-										<div class="listing-img-wrapper" style="position: relative;">
+									<div class="listing-img-wrapper" style="position: relative;">
 											<div class="list-img-slide">
 												<div class="click">
 												@foreach ($prop->property_fk->property_imgs_fk as $img)
@@ -195,6 +372,9 @@
 												@endforeach
 												</div>
 											</div>
+											<div class="sb-date"> 
+												<span class="tag"><i class="ti-calendar"></i>{{\Carbon::parse($prop->created_at)->diffForHumans()}}</span>
+											</div>
 											<span class="tag_t"><?php if(app()->getLocale() == 'ar'){echo $prop->property_fk->status_fk->name_ar;}else{echo $prop->property_fk->status_fk->name_en;} ?></span>
 										</div>
 										<div class="proerty_content">
@@ -202,7 +382,7 @@
 											  <h3 class="captlize"><a href="{{route('front-properties-show',$prop->property_fk->slug)}}"><?php if(app()->getLocale() == 'ar'){echo substr($prop->property_fk->title_ar,0,25);}else{echo substr($prop->property_fk->title_en,0,25);} ?></a></h3>
 											  <p class="proerty_price">{{$prop->property_fk->price}}</p>
 											</div>
-											<p class="property_add">{{$prop->property_fk->address}}</p>
+											<p class="property_add">{{substr($prop->property_fk->address,0,30)}}</p>
 											<div class="property_meta"> 
 											  <div class="list-fx-features">
 													<div class="listing-card-info-icon">
@@ -221,64 +401,65 @@
 											</div>
 											<div class="property_links">
 												<a href="single-property-3.html" class="btn btn-theme">{{__('home.contact_company')}}</a>
-												<a href="{{route('front-properties-show',$prop->property_fk->slug)}}" class="btn btn-theme-light">{{__('home.property_details')}}</a>
+												<a href="single-property-3.html" class="btn btn-theme-light">{{__('home.property_details')}}</a>
 											</div>
 										</div>
 									</div>
 								</div>
-
 								@endforeach
-								
-								
-							</div>
 							<?php }else{ ?>
 								<div style="text-align: center">
 									<img src="/front/assets/img/house-moving-illustration.svg"  alt="" />
 
 								</div>
-								<?php }
+							<?php } ?>
+							
 								
-								?>
+							</div>
 						</div>
 					</div>
 					
 				</div>
 			</section>
-			<!-- ============================ Latest Property For features End ================================== -->
+			<!-- ============================ Slide Property features End ================================== -->
 
 
-			<!-- ============================ Latest Property For Sale Start ================================== -->
-			<section>
+			<!-- ============================ sales Property Start ================================== -->
+			<section class="pb-0">
 				<div class="container">
 				
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
-							<div class="sec-heading center">
-								<h2>{{__('home.sale_properties_title')}}</h2>
-								<p>{{__('home.sale_properties_second')}}</p>
+							<div class="sec-heading2 center">
+								<div class="sec-left">
+									<h3>{{__('home.sale_properties_title')}}</h3>
+									<p>{{__('home.sale_properties_second')}}</p>
+								</div>
+								<div class="sec-right">
+									<a href="half-map.html">View All<i class="ti-angle-double-right ml-2"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 					
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
-						<?php 
+							<?php 
 						if($properties_sales->count() > 0){ ?>
 							<div class="property-slide">
-								
 								@foreach ($properties_sales as $p_sales)
-								<!-- Start Single Property -->
+								<!-- Single Property -->
 								<div class="single-items">
 									<div class="property-listing property-2">
 								
 										<div class="listing-img-wrapper">
 											<div class="list-img-slide">
 												<div class="click">
-											@foreach ($p_sales->property_imgs_fk as $img)
+												@foreach ($p_sales->property_imgs_fk as $img)
 
-												<div><a href="{{route('front-properties-show',$p_sales->slug)}}"><img src="/images/properties/{{$img->image}}" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="{{route('front-properties-show',$p_sales->slug)}}"><img src="/images/properties/{{$img->image}}" class="img-fluid mx-auto" alt="" /></a></div>
 
-											@endforeach
+												@endforeach
 												</div>
 											</div>
 											<span class="property-type"><?php if(app()->getLocale() == 'ar'){echo $p_sales->status_fk->name_ar;}else{echo $p_sales->status_fk->name_en;} ?></span>
@@ -286,7 +467,7 @@
 										
 										<div class="listing-detail-wrapper pb-0">
 											<div class="listing-short-detail">
-												<h4 class="listing-name"><a href="{{route('front-properties-show',$p_sales->slug)}}"><?php if(app()->getLocale() == 'ar'){echo substr($p_sales->title_ar,0,35);}else{ echo substr($p_sales->title_en,0,35);} ?></a><i class="list-status ti-check"></i></h4>
+												<h4 class="listing-name"><a href="{{route('front-properties-show',$p_sales->slug)}}"><?php if(app()->getLocale() == 'ar'){echo substr($p_sales->title_ar,0,25);}else{ echo substr($p_sales->title_en,0,25);} ?></a><i class="list-status ti-check"></i></h4>
 											</div>
 										</div>
 										
@@ -306,61 +487,61 @@
 										
 									</div>
 								</div>
-								<!-- End Single Property -->	
 								@endforeach
-
+						
 							
-								
+						
 								
 							</div>
-						<?php }else{ ?>
-							<div style="text-align: center">
+							<?php }else{ ?>
+								<div style="text-align: center">
 									<img src="/front/assets/img/house-moving-illustration.svg"  alt="" />
 
 								</div>
-						<?php }
-						?>
-							
+							<?php } ?>
 						</div>
 					</div>
 					
 				</div>
 			</section>
-			<!-- ============================ Latest Property For Sale End ================================== -->
+			<!-- ============================ sales Property End ================================== -->
 
-
-			<!-- ============================ Latest Property For Rent Start ================================== -->
-			<section class="gray">
+			<!-- ============================ Rent Property Start ================================== -->
+			<section class="pb-0">
 				<div class="container">
 				
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
-							<div class="sec-heading center">
-								<h2>{{__('home.rent_properties_title')}}</h2>
-								<p>{{__('home.rent_properties_second')}}</p>
+							<div class="sec-heading2 center">
+								<div class="sec-left">
+									<h3>{{__('home.rent_properties_title')}}</h3>
+									<p>{{__('home.rent_properties_second')}}</p>
+								</div>
+								<div class="sec-right">
+									<a href="half-map.html">View All<i class="ti-angle-double-right ml-2"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 					
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
-						<?php 
+							<?php 
 						if($properties_rents->count() > 0){ ?>
-								<div class="property-slide">
-								
-							@foreach ($properties_rents as $p_rents)
-								<!-- Start Single Property -->
+							<div class="property-slide">
+								@foreach ($properties_rents as $p_rents)
+								<!-- Single Property -->
 								<div class="single-items">
 									<div class="property-listing property-2">
 								
 										<div class="listing-img-wrapper">
 											<div class="list-img-slide">
 												<div class="click">
-											@foreach ($p_rents->property_imgs_fk as $img)
+												@foreach ($p_rents->property_imgs_fk as $img)
 
-												<div><a href="{{route('front-properties-show',$p_rents->slug)}}"><img src="/images/properties/{{$img->image}}" class="img-fluid mx-auto" alt="" /></a></div>
+													<div><a href="{{route('front-properties-show',$p_rents->slug)}}"><img src="/images/properties/{{$img->image}}" class="img-fluid mx-auto" alt="" /></a></div>
 
-											@endforeach
+												@endforeach
 												</div>
 											</div>
 											<span class="property-type"><?php if(app()->getLocale() == 'ar'){echo $p_rents->status_fk->name_ar;}else{echo $p_rents->status_fk->name_en;} ?></span>
@@ -368,7 +549,7 @@
 										
 										<div class="listing-detail-wrapper pb-0">
 											<div class="listing-short-detail">
-												<h4 class="listing-name"><a href="{{route('front-properties-show',$p_rents->slug)}}"><?php if(app()->getLocale() == 'ar'){echo substr($p_rents->title_ar,0,35);}else{echo substr($p_rents->title_en,0,35);} ?></a><i class="list-status ti-check"></i></h4>
+												<h4 class="listing-name"><a href="{{route('front-properties-show',$p_rents->slug)}}"><?php if(app()->getLocale() == 'ar'){echo substr($p_rents->title_ar,0,25);}else{ echo substr($p_rents->title_en,0,25);} ?></a><i class="list-status ti-check"></i></h4>
 											</div>
 										</div>
 										
@@ -388,27 +569,27 @@
 										
 									</div>
 								</div>
-								<!-- End Single Property -->	
 								@endforeach
+						
+							
+						
 								
 							</div>
-						<?php }else{ ?>
+							<?php }else{ ?>
 								<div style="text-align: center">
-										<img src="/front/assets/img/house-moving-illustration.svg"  alt="" />
+									<img src="/front/assets/img/house-moving-illustration.svg"  alt="" />
 
 								</div>
-						<?php }
-						?>
-						
+							<?php } ?>
 						</div>
 					</div>
 					
 				</div>
 			</section>
-			<!-- ============================ Latest Property For Rent End ================================== -->
-
+			<!-- ============================ Rent Property End ================================== -->
 
 			<!-- ============================ Property Location Start ================================== -->
+			<!--
 			<section>
 				<div class="container">
 					
@@ -423,7 +604,7 @@
 					
 					<div class="row">
 						
-						<!-- Single Location Listing -->
+						
 						@foreach ($citys as $city)
 
 						<div class="col-lg-3 col-md-3 col-sm-6">
@@ -444,7 +625,56 @@
 					</div>
 				</div>
 			</section>
-			<!-- ============================ Property Location End ================================== -->
+			-->
+
+			<!-- ============================ Slide Location Start ================================== -->
+
+			<section class="pt-0" style="margin-top: 50px;">
+				<div class="container">
+				
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="sec-heading2 center">
+								<div class="sec-left">
+									<h3>{{__('home.location_properties_title')}}</h3>
+									<p>{{__('home.location_properties_second')}}</p>
+								</div>
+								<div class="sec-right">
+									<a href="half-map.html">View All<i class="ti-angle-double-right ml-2"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="location-slide">
+								
+								@foreach ($citys as $city)
+										<!-- Single location -->
+								<div class="single-items">
+									<a href="{{route('front-properties-citys',$city->slug)}}" class="img-wrap">
+											<div class="img-wrap-content visible">
+												<h4><?php if(app()->getLocale() == 'ar'){echo $city->name_ar;}else{echo $city->name_en;} ?></h4>
+												<span>{{$city->property_fk->count()}} Properties</span>
+											</div>
+										<div class="img-wrap-background"><img style="height: 100%;" src="{{$city->main_image()}}" class="img-fluid" alt="" /></div>
+									</a>
+								</div>
+								@endforeach
+							
+								
+								
+								
+							
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<!-- ============================ Slide Location End ================================== -->
 			
 			<!-- ============================ Agent Start ================================== -->
 
@@ -454,11 +684,6 @@
 				<div class="container">
 					
 					<div class="row">
-
-
-
-
-
 
 						<div class="col-lg-12 col-md-12">
 							<div class="sec-heading center">
@@ -693,70 +918,31 @@
 
 			<!-- ============================ Agencies Start ================================== -->
 
-			<section>
-				<div class="container">
-					
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<div class="sec-heading2 text-center">
-								<div class="sec-left">
-									<h2>{{__('home.features_agencies')}}</h2>
-									<p>{{__('home.find_new_agencies')}}</p>
-								</div>
-						
-							</div>
-						</div>
-					</div>
-					
-					<div class="row">
-						
-						@foreach ($agencies_feaures as $agency)
-								<!-- Single Agent -->
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="agents-grid">
-								
-								<div class="jb-bookmark"><a href="javascript:void(0)" data-toggle="tooltip" data-original-title="Bookmark"><i class="ti-bookmark"></i></a></div>
-								<div class="agent-call"><a href="#"><i class="lni-phone-handset"></i></a></div>
-								<div class="agents-grid-wrap">
-									
-									<div class="fr-grid-thumb">
-										<a href="agent-page.html">
-											<div class="overall-rate">4.5</div>
-											<img src="{{$agency->agency_fk->main_image()}}" class="img-fluid mx-auto" alt="">
-										</a>
-									</div>
-									<div class="fr-grid-deatil">
-										<h5 class="fr-can-name"><a href="agent-page.html"><?php if(app()->getLocale() == 'ar'){echo $agency->agency_fk->name_ar;}else{echo $agency->agency_fk->name_en;} ?></a></h5>
-										<span class="fr-position"><i class="lni-map-marker"></i>{{$agency->agency_fk->address}}</span>
-										<span class="agent-type theme-cl">{{$agency->agency_fk->properties_fk->count()}}</span>
-									</div>
-									
-								</div>
-								
-								<div class="fr-grid-footer">
-									<ul class="fr-grid-social">
-										<li><a href="#"><i class="ti-facebook"></i></a></li>
-										<li><a href="#"><i class="ti-twitter"></i></a></li>
-										<li><a href="#"><i class="ti-instagram"></i></a></li>
-										<li><a href="#"><i class="ti-linkedin"></i></a></li>
-									</ul>
-								</div>
-								
-							</div>
-						</div>
-						@endforeach
-					
-						
-					
-						
-							
-					</div>
-					<div class="sec-right text-center">
-						<a href="half-map.html">View All<i class="ti-angle-double-right ml-2"></i></a>
-					</div>
-				</div>
-					
-			</section>
+			<section class="our-clients-section spacer">
+            <div class="container">
+                <h2 class="text-center">Our Clients</h2>
+                <p class="text-center">We only work with the best companies around the globe</p>
+
+                <ul class="list-unstyled d-md-flex d-block justify-content-between align-items-center mt-5 text-center mb-5">
+                    <li class="mb-5 mb-md-0">
+                        <img class="img-fluid" src="/front/assets/img/1.png" alt="our-clients-img">
+                    </li>
+                    <li class="mb-5 mb-md-0">
+                        <img class="img-fluid" src="/front/assets/img/2.png" alt="our-clients-img">
+                    </li>
+                    <li class="mb-5 mb-md-0">
+                        <img class="img-fluid" src="/front/assets/img/3.png" alt="our-clients-img">
+                    </li>
+                    <li class="mb-5 mb-md-0">
+                        <img class="img-fluid" src="/front/assets/img/4.png" alt="our-clients-img">
+                    </li>
+                    <li class="mb-5 mb-md-0">
+                        <img class="img-fluid" src="/font/assets/img/5.png" alt="our-clients-img">
+                    </li>
+                </ul>
+
+            </div>
+        </section>
 
 			<!-- ============================ Agencies end ================================== -->
 

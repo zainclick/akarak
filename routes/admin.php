@@ -40,6 +40,7 @@ use App\Http\Controllers\Backend\BackendRedirectionController;
 use App\Http\Controllers\Backend\BackendAnnouncementController;
 use App\Http\Controllers\Backend\BackendContactReplyController;
 use App\Http\Controllers\Backend\BackendNotificationsController;
+use App\Http\Controllers\Backend\BackendPropertyTypesController;
 use App\Http\Controllers\Backend\BackendAgentsFeaturesController;
 use App\Http\Controllers\Backend\BackendArticleCommentController;
 use App\Http\Controllers\Backend\BackendUserPermissionController;
@@ -106,6 +107,8 @@ Route::prefix('admin')->middleware(['auth','ActiveAccount'])->name('admin.')->gr
         Route::get('properties-features',[BackendPropertiesFeaturesController::class,'index'])->name('properties-features');
         Route::get('add-property-features/{slug}',[BackendPropertiesController::class,'add_property_features'])->name('add.property.features');
         Route::get('remove-property-features/{slug}',[BackendPropertiesController::class,'remove_property_features'])->name('remove.property.features');
+        
+        Route::resource('property-types',BackendPropertyTypesController::class);
 
 
 

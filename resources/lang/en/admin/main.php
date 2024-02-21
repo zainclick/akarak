@@ -2,10 +2,10 @@
 
 return [
 
-    'dashboard' => 'لوحة التحكم',
-    'add_new' => ' إضافة جديد ',
-    'control' => 'تحكم',
-    'active' => 'مفعل',
-    'dis_active' => 'غير مفعل',
+    'dashboard' => 'Dashboard',
+    'add_new' => 'Create ',
+    'control' => 'Control',
+    'active' => 'Active',
+    'dis_active' => 'Dis active',
 
 ];

@@ -273,7 +273,10 @@
                                     @endcan
                                     @can('articles-read')
                                     <li><a href="{{route('admin.properties-features')}}" style="font-size: 16px;"><span class="fal fa-book px-2" style="width: 28px;font-size: 15px;"></span> {{__('admin/menue_right.properties_features')}}</a></li>
+                                    <li><a href="{{route('admin.property-types.index')}}" style="font-size: 16px;"><span class="fal fa-book px-2" style="width: 28px;font-size: 15px;"></span> {{__('admin/menue_right.property_type')}}</a></li>
+
                                     @endcan
+
 
 
                                 </ul>

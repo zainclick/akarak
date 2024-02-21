@@ -26,7 +26,7 @@ class PropertiesController extends Controller
       $props_features = PropertiesFeatures::inRandomOrder()->with('property_fk')->limit(5)->get();
       $features = Features::where('status',0)->get();
       $citys = citys::where('status',0)->get();
-      $types = PropertysTyps::all();
+      $types = PropertysTyps::with('properties_fk')->get();
       $statuses = PropertysStatus::all();
 
        return view('front.properties.index',compact('properties','props_features','features','citys','types','statuses'));

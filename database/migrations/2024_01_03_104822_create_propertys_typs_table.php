@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name_ar');
             $table->string('name_en');
+            $table->string('slug')->unique()->index();
             $table->integer('status')->comment('o main active | 1 main no active');
+            $table->string('logo')->nullable();
             $table->timestamps();
         });
     }

@@ -7,6 +7,7 @@ use App\Http\Controllers\Front\PricingController;
 use App\Http\Controllers\Front\AgenciesController;
 use App\Http\Controllers\Front\PropertiesController;
 use App\Http\Controllers\Front\StatisticsController;
+use App\Http\Controllers\Front\PropertiesTypeController;
 
 Route::group(
     [
@@ -21,7 +22,9 @@ Route::group(
         Route::get('properties-search', [PropertiesController::class,'search'])->name('front-properties-search');
         Route::get('properties-searches', [PropertiesController::class,'searchFront'])->name('front-properties-search-index');
 
-        
+        Route::get('properties-type', [PropertiesTypeController::class,'index'])->name('front-properties-type');
+        Route::get('properties-type/{slug}', [PropertiesTypeController::class,'type'])->name('front-properties-type-slug');
+
         // Front Agencies Routes
         Route::get('agencies', [AgenciesController::class,'index'])->name('front-agencies');
         Route::get('agencies/search', [AgenciesController::class,'searchAgency'])->name('front-agency-search');
