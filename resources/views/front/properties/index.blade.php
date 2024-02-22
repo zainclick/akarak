@@ -14,6 +14,25 @@
 				<div class="container">
 					
 					<div class="row">
+
+						<div class="block-wrap">			
+							<div class="block-body">
+								<div class="row">
+									@foreach ($types as $type)
+									<?php 
+									if($type->properties_fk->count() > 0){ ?>
+										<div class='col-lg-3 col-md-3'>
+											<div><a href="{{route('front-properties-type-slug',$type->slug)}}"><?php if(app()->getLocale() == 'ar'){echo $type->name_ar;}else{echo $type->name_en;} echo " ( " . $type->properties_fk->count() ." )";?></a></div>
+										</div>
+									<?php }
+									?>
+										
+									@endforeach
+								</div>	
+							</div>
+									
+						</div>
+
 						<div class="col-lg-12 col-md-12">
 							<div class="filter_search_opt">
 								<a href="javascript:void(0);" onclick="openFilterSearch()">Search Property<i class="ml-2 ti-menu"></i></a>
@@ -135,7 +154,7 @@
 					<!-- property Sidebar -->
 						<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="sidebar-category-widget mb-4 pb-1">
+						<div class="sidebar-category-widget mb-4 pb-1" style="margin-top: 41px">
 										<div class="card border-0">
 											<div class="card-body p-4">
 												<h4 class="title mb-4">Property Category</h4>

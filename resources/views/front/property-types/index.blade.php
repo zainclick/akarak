@@ -22,7 +22,7 @@
 									<div class="row">
 									@foreach ($types as $type)
 										<div class='col-lg-3 col-md-3'>
-											<div><a href="#"><?php if(app()->getLocale() == 'ar'){echo $type->name_ar;}else{echo $type->name_en;} echo " ( " . $type->properties_fk->count() ." )";?></a></div>
+											<div><a href="{{route('front-properties-type-slug',$type->slug)}}"><?php if(app()->getLocale() == 'ar'){echo $type->name_ar;}else{echo $type->name_en;} echo " ( " . $type->properties_fk->count() ." )";?></a></div>
 										</div>
 									@endforeach
 										
@@ -153,25 +153,8 @@
 					<!-- property Sidebar -->
 						<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="sidebar-category-widget mb-4 pb-1">
-										<div class="card border-0">
-											<div class="card-body p-4">
-												<h4 class="title mb-4">Property Category</h4>
-
-												<ul class="list-unstyled">
-												@foreach ($types as $type)
-													
-													<li><a href="{{route('front-properties-type-slug',$type->slug)}}" class="d-flex align-items-center text-decoration-none"><?php if(app()->getLocale() == 'ar'){echo $type->name_ar;}else{echo $type->name_en;} ?> <span class="ml-auto">{{$type->properties_fk->count()}} properties</span></a></li>
-
-												@endforeach
-												</ul>
-											</div>
-										</div>
-									</div>
-						
-
 							<!-- Featured Property -->
-								<div class="sidebar-widgets">
+								<div class="sidebar-widgets" style="margin-top: 6px;">
 									@if($props_features->count() > 0) 
 									<h4 style="font-size: 17px;margin-left: 15px;">{{__('front/properties/show.features_property')}}</h4>
 									

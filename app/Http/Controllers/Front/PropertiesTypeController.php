@@ -14,7 +14,16 @@ use App\Models\Backend\PropertiesFeatures;
 class PropertiesTypeController extends Controller
 {
     public function index(){
-        return 'index';
+
+        $props_features = PropertiesFeatures::inRandomOrder()->with('property_fk')->limit(5)->get();
+        $features = Features::where('status',0)->get();
+        $citys = citys::where('status',0)->get();
+        $types = PropertysTyps::with('properties_fk')->get();
+        $statuses = PropertysStatus::all();
+        $properties = Properties::where('activity_status',0)->paginate(10);
+
+        return view('front.property-types.index',compact('properties','props_features','features','citys','types','statuses'));
+
     }
 
     public function type($slug){
